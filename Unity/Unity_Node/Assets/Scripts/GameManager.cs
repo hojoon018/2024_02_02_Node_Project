@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameView와 GameController 초기화 
+        //GameVIew와 GameController 초기화
         gameController = gameView.gameObject.AddComponent<GameController>();
         gameController.gameView = gameView;
     }
-   
+
 }

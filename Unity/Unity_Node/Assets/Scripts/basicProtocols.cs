@@ -11,5 +11,4 @@ public class basicProtocols
             public string message;
         }
     }
-
 }

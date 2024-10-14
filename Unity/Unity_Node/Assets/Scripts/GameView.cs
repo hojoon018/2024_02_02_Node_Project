@@ -18,6 +18,7 @@ public class GameView : MonoBehaviour
     public Button developButton;
     public Slider progressBar;
 
+
     //UI 업데이트 메서드
     public void SetPlayerName(string name)
     {
@@ -28,7 +29,7 @@ public class GameView : MonoBehaviour
     {
         metalText.text = $"Metal: {metal}";
         crystalText.text = $"Crystal : {crystal}";
-        deuteriumText.text = $"Deuteriu : {deuterium }";
+        deuteriumText.text = $"Deuterium :{deuterium}";
     }
 
     public void UpdateProgressBar(float value)
@@ -37,22 +38,22 @@ public class GameView : MonoBehaviour
     }
 
     //버튼 클릭 리스너 설정 메서드
-    public void SetRegisterButtonListener(UnityEngine.Events.UnityAction action)
+    public void SetRegisterButonListener(UnityEngine.Events.UnityAction action)
     {
         registerButton.onClick.RemoveAllListeners();
         registerButton.onClick.AddListener(action);
     }
-    public void SetLoginButtonListener(UnityEngine.Events.UnityAction action)
+    public void SetLoginButonListener(UnityEngine.Events.UnityAction action)
     {
         loginButton.onClick.RemoveAllListeners();
         loginButton.onClick.AddListener(action);
     }
-    public void SetCollectButtonListener(UnityEngine.Events.UnityAction action)
+    public void SetCollectButonListener(UnityEngine.Events.UnityAction action)
     {
         collectButton.onClick.RemoveAllListeners();
         collectButton.onClick.AddListener(action);
     }
-    public void SetDevelopButtonListener(UnityEngine.Events.UnityAction action)
+    public void SetDevelopButonListener(UnityEngine.Events.UnityAction action)
     {
         developButton.onClick.RemoveAllListeners();
         developButton.onClick.AddListener(action);

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 [Serializable]
 public class PlayerModel
 {
@@ -10,6 +9,7 @@ public class PlayerModel
     public int crystal;
     public int deuterium;
     public List<PlanetModel> Planets;
+
     public PlayerModel(string name)
     {
         this.playerName = name;
@@ -25,6 +25,7 @@ public class PlayerModel
         deuterium += 2;
     }
 }
+
 
 [Serializable]
 public class PlanetModel

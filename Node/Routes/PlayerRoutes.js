@@ -66,8 +66,8 @@ router.post('/register' , (req, res) => {
     res.send({message : '등록 완료' , Player:name});
 });
 
-//자원 수집 메서드 
-router.post('/collect/:playerName' , (req, res) => {
+//자원 수집 메서드
+router.post('/register' , (req, res) => {
     const player = global.players[req.params.playerName];
 
     if(!player)
@@ -77,14 +77,11 @@ router.post('/collect/:playerName' , (req, res) => {
 
     player.resources.metal += 10;
     player.resources.crystal += 5;
-    player.resources.deuterium += 2;   
-
-    console.log(player.resources);
+    player.resources.deuterium += 2;
 
     saveResources();            //자원 저장
     res.send(player.resources);
 });
-
 
 
 //자원 저장 함수
