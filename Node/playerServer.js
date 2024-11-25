@@ -28,7 +28,7 @@ class GameServer {
 
             console.log(`클라이언트 접속 ! ID : ${playerId}, 현재 접속자 : ${this.clients.size}`);
 
-            //접속한 플레이어에게 ID 전송 및 메세지
+            //접속한 플레이어에게 ID 전송 및 메세지 //dd
             const welcomeData = {
                 type: `connection`,
                 playerId: playerId,
