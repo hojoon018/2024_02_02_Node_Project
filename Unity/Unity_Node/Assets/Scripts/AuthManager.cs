@@ -6,7 +6,6 @@ using System.Text;
 using UnityEngine.Networking;
 using Newtonsoft;
 using Newtonsoft.Json;
-using UnityEditor.SceneManagement;
 
 public class AuthManager : MonoBehaviour
 {
